@@ -111,7 +111,7 @@ async def handle_turnstile(page, username: str) -> bool:
 
 
 async def login_with_playwright(username: str, password: str) -> tuple[bool, list[str]]:
-    print(f"\n🔐 处理账号: {username}")
+    #print(f"\n🔐 处理账号: {username}")
     screenshots = []
 
     async with async_playwright() as p:

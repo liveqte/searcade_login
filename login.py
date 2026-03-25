@@ -56,7 +56,7 @@ async def try_load_state_and_check_login(context, page, username: str) -> bool:
 
         await page.goto("https://searcade.com/", wait_until="networkidle", timeout=45000)
         if await is_already_logged_in(page):
-            print(f"  ✅ state 有效，已登录 ({username})")
+            # print(f"  ✅ state 有效，已登录 ({username})")
             await save_screenshot(page, "state_logged_in", username)
             return True
         else:
